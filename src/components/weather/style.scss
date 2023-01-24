@@ -1,0 +1,15 @@
+.weather-content{
+	dl{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 5px 10px;
+		max-width: 220px;
+		margin: 0 auto;
+	}
+	dt{
+		text-align: left;
+	}
+	dd{
+		text-align: right;
+	}
+}

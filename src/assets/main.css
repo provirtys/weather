@@ -1,0 +1,13 @@
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include font-face('Roboto', "@/assets/fonts/Roboto/Roboto-Regular", 400, normal, ttf);
+@include font-face('Roboto', "@/assets/fonts/Roboto/Roboto-Bold", 700, normal, ttf);
+
+
+
+
+
