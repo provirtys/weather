@@ -82,7 +82,7 @@ export const useWeatherStore = defineStore("weather", () => {
 
 	const getWeather = () => {
 		let promise = fetch(
-			`http://api.openweathermap.org/data/2.5/weather?q=${selectedCity.value.name}&appid=b5f7f97bc3303b50e9eb2fa20027f120`,
+			`https://api.openweathermap.org/data/2.5/weather?q=${selectedCity.value.name}&appid=b5f7f97bc3303b50e9eb2fa20027f120`,
 		)
 		return promise
 	}
