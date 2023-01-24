@@ -36,7 +36,7 @@ export default {
 
 		const getWeatherIcon = () => {
 			let promise = fetch(
-				`http://openweathermap.org/img/wn/${weatherStore.cityInfo.weather[0].icon}@2x.png`,
+				`https://openweathermap.org/img/wn/${weatherStore.cityInfo.weather[0].icon}@2x.png`,
 			)
 			return promise
 		}
