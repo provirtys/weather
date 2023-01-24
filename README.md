@@ -1,5 +1,7 @@
 # weather
 
+This weather app works on Vue and uses OpenWeatherMap API v2.5
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
