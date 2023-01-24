@@ -108,11 +108,11 @@ export const useWeatherStore = defineStore("weather", () => {
 
 	watch(selectedCity, city => {
 		loading.value = true
-		updateInfo()
+		Object.keys(city).length ? 	updateInfo() : null
 	})
 
 	watch(selectedTab, val => {
-		selectedCity.value = val.id === 0 ? citiesListSorted.value[0] : favoriteCities.value[0]
+		selectedCity.value = val.id === 0 ? citiesListSorted.value[0] : favoriteCities.value.length ? favoriteCities.value[0] : {}
 	})
 
 	onMounted(() => {
