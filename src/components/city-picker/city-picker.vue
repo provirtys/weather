@@ -2,14 +2,14 @@
 	<bottom-section>
 		<template #content>
 			<div class="city-picker flex justify-between">
-				<v-select class="city-picker__select"
+				<v-select class="city-picker__select flex-grow flex-shrink"
 					:list="citiesList"
 					v-model="weatherStore.selectedCity" />
-				<div class="city-picker__time text-5xl text-center">
-					<p class="mb-5">{{ localDate }}</p>
-					<p class="mb-8">{{ localTime }}</p>
-					<v-button color="green" @click="weatherStore.addToFavorite()" v-if="!weatherStore.favoriteCities.find(city => city.name === weatherStore.selectedCity.name)"><span class="text-2xl">+</span> В избранное</v-button>
-					<v-button color="red" @click="weatherStore.removeFromFavorite()" v-else><span class="text-2xl">-</span> Из избранного</v-button>
+				<div class="city-picker__time text-dynamicXL text-center">
+					<p>{{ localDate }}</p>
+					<p class="mb-5 ">{{ localTime }}</p>
+					<v-button color="green" @click="weatherStore.addToFavorite()" v-if="!weatherStore.favoriteCities.find(city => city.name === weatherStore.selectedCity.name)"><span class="text-dynamicBase">+</span> В избранное</v-button>
+					<v-button color="red" @click="weatherStore.removeFromFavorite()" v-else><span>-</span> Из избранного</v-button>
 				</div>
 			</div>
 		</template>

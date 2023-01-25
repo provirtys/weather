@@ -1,5 +1,5 @@
 <template>
-	<button :class="['button', 'button--' + color]" >
+	<button :class="['button text-dynamicBase', 'button--' + color]" >
 		<slot></slot>
 	</button>
 </template>

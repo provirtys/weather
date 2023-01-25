@@ -5,7 +5,6 @@ import App from './App.vue'
 import router from './router'
 import BottomSection from './components/ui/bottom-section/bottom-section.vue'
 
-import './assets/main.css'
 
 const app = createApp(App)
 

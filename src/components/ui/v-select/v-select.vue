@@ -1,5 +1,5 @@
 <template>
-	<div :class="['select', { 'select--active': isOpen }]"
+	<div :class="['select text-left', { 'select--active': isOpen }]"
 		ref="select">
 		<div class="select-wrapper">
 			<div :class="['select__placeholder', { 'select__placeholder--disabled': !list.length }]"

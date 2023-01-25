@@ -2,7 +2,7 @@
 	<bottom-section>
 		<template #header>Солнце</template>
 		<template #content>
-			<div class="sun-content text-lg">
+			<div class="sun-content">
 				<dl>
 					<dt>Восход</dt>
 					<dd>{{ sunData?.sunrise }}</dd>

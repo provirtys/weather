@@ -2,7 +2,7 @@
 	<bottom-section>
 		<template #header>Температура</template>
 		<template #content>
-			<div class="temperature-content text-lg">
+			<div class="temperature-content">
 				<dl>
 					<dt>Сейчас</dt>
 					<dd>{{ temps?.temp }}</dd>

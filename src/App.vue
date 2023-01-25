@@ -1,7 +1,7 @@
 <template>
 	<div class="app" :style="{backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('${image.src}')`}">
-		<div class="city-name grow shrink basis-auto text-white text-7xl pt-20 pl-20">{{ weatherStore.selectedCity.title }}</div>
-		<v-tabs/>
+		<div class="city-name grow shrink basis-auto text-white text-dynamic2XL p-dynamicLG">{{ weatherStore.selectedCity.title }}</div>
+		<v-tabs class="text-dynamicLG"/>
 		<bottom></bottom>
 	</div>
 </template>
@@ -33,22 +33,4 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
-.app {
-	// background-image: url('./assets/img/bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
-	overflow: hidden;
-	transition: background-image 10.2s ease-in-out;
-}
-
-.select-city {
-	width: 200px;
-}
-</style>
+<style lang='scss' src="./assets/style/index.scss"/>

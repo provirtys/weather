@@ -1,0 +1,13 @@
+.city-picker{
+	@include desktop{
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px 0;
+	}
+
+	&__select{
+		@include desktop{
+			flex: 0 0 100%;
+		}
+	}
+}

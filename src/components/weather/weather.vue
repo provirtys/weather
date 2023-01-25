@@ -2,10 +2,10 @@
 	<bottom-section>
 		<template #header>Погода</template>
 		<template #content>
-			<div class="weather-content flex flex-col items-center text-lg">
+			<div class="weather-content flex flex-col items-center">
 				<img class="weather-icon w-[60px]"
 					:src="iconHref" />
-				<p class="weather-description text-sm mb-8">{{ description }}</p>
+				<p class="weather-description mb-8">{{ description }}</p>
 				<dl>
 					<dt>Влажность</dt>
 					<dd>{{ humidity }}</dd>

@@ -2,7 +2,7 @@
 	<bottom-section>
 		<template #header>Ветер</template>
 		<template #content>
-			<div class="wind-content text-lg">
+			<div class="wind-content">
 				<dl>
 					<dt>Направление</dt>
 					<dd>{{ windData?.direction }}</dd>

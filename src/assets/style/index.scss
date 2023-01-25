@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include font-face('Roboto', "@/assets/fonts/Roboto/Roboto-Regular", 400, normal, ttf);
+@include font-face('Roboto', "@/assets/fonts/Roboto/Roboto-Bold", 700, normal, ttf);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+	font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,button{
+	font-family: inherit;
+}
+
+.app {
+	// background-image: url('./assets/img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	overflow: hidden;
+	transition: background-image 10.2s ease-in-out;
+}
+
+.select-city {
+	width: 200px;
+	
+}

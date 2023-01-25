@@ -1,13 +1,11 @@
 .tabs{
 	text-transform: uppercase;
-	font-size: 18px;
 	display: flex;
 	color: gray;
 
 	&__tab{
 		text-align: center;
 		padding-bottom: 10px;
-		width: calc(1/6 * 100%);
 		transition: color .3s;
 		cursor: pointer;
 
