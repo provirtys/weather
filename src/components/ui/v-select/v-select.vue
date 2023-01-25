@@ -68,7 +68,7 @@ export default {
 			if (!oldVal && newVal) {
 				nextTick().then(() => {
 					const selectedItem = document.querySelector('.select__item--selected')
-					selectedItem?.scrollIntoView()
+					// selectedItem?.scrollIntoView()
 				})
 			}
 		})
